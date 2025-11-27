@@ -2,7 +2,7 @@ name: CI Demo
 
 on:
   push:
-    branches: [ "JD" ]   # aquí se ejecuta solo cuando haces push a la rama STH
+    branches: [ JD ]   # aquí se ejecuta solo cuando haces push a la rama STH
   # pull_request:       # si no lo usas, puedes dejarlo comentado o borrarlo
 
 jobs:
