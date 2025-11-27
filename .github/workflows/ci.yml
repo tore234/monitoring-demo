@@ -22,5 +22,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest
 
+      # PASO NUEVO: Esto te mostrará la estructura real de carpetas en los logs
+      - name: Debug - Listar archivos
+        run: ls -R
+
+      # CORRECCIÓN: Quitamos la ruta específica para que pytest encuentre las pruebas solo
       - name: Ejecutar pruebas
-        run: pytest main/tests/test_app.py -v
+        run: pytest -v
