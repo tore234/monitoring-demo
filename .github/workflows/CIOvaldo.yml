@@ -2,8 +2,7 @@ name: CIOvalado
 
 on:
   push:
-    branches: [ OvaladoRama ]   # aquí se ejecuta solo cuando haces push a la rama STH
-  # pull_request:       # si no lo usas, puedes dejarlo comentado o borrarlo
+    branches: [ OvaladoRama ]   
 
 jobs:
   build-test:
