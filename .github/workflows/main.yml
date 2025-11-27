@@ -1,0 +1,25 @@
+name: CI Demo
+
+on:
+  push:
+    branches: [Yes]   
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar pytest
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+
+      - name: Ejecutar pruebas
+        run: pytest tests/test_app.py -v
