@@ -2,9 +2,7 @@ name: CI Demo
 
 on:
   push:
-    branches: [ IanGL ]   # se ejecuta solo cuando haces push a tu rama IanGL
-  pull_request:
-    branches: [ IanGL ]   # opcional: también cuando abras PR hacia IanGL
+    branches: [ IanGL ]
 
 jobs:
   build-test:
@@ -26,5 +24,4 @@ jobs:
           pip install pytest
 
       - name: Ejecutar pruebas
-        run: pytest -v      # busca automáticamente todos los tests en la carpeta tests/
-        # si quisieras solo ese archivo: pytest tests/test_app.py -v
+        run: pytest -v        # ejecuta TODOS los tests dentro de tests/
