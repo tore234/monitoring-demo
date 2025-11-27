@@ -23,4 +23,4 @@ jobs:
           pip install pytest
 
       - name: Ejecutar pruebas
-        run: pytest test/test_app.py -v
+        run: pytest test_app.py -v
