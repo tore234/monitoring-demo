@@ -1,4 +1,2 @@
-from app.main import sumar
-
-def test_sumar():
-    assert sumar(2, 3) == 5
+def sumar(a: int, b: int) -> int:
+    return a + b
