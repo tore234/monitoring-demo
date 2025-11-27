@@ -23,4 +23,4 @@ jobs:
           pip install pytest
 
       - name: Ejecutar pruebas
-        run: pytest test_app.py -v
+        run: pytest https://github.com/tore234/monitoring-demo/tree/main/tests/test_app.py -v
