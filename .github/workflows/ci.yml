@@ -1,9 +1,8 @@
-name: CI Demo
+name: CIOvalado
 
 on:
   push:
-    branches: [ CarlosU ]   # aquí se ejecuta solo cuando haces push a la rama CarlosU
-  # pull_request:       # si no lo usas, puedes dejarlo comentado o borrarlo
+    branches: [ OvaladoRama ]  
 
 jobs:
   build-test:
@@ -24,4 +23,4 @@ jobs:
           pip install pytest
 
       - name: Ejecutar pruebas
-        run: pytest test_app.py -v
+        run: pytest test/test_app.py -v
